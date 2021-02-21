@@ -53,7 +53,7 @@ function removeContact(contactId) {
         return;
     }
 
-    console.log('Contact deleted successfully! New list of contacts: ');
+    console.log('Contact deleted successfully!!! New list of contacts: ');
     console.table(newContact);
 
     fs.writeFile(contactsPath, JSON.stringify(newContact), error => {
@@ -79,7 +79,7 @@ function addContact(name, email, phone) {
         phone: phone,
     });
 
-    console.log('Contacts added successfully! New lists of contacts: ');
+    console.log('Contacts added successfully!!! New lists of contacts: ');
     console.table(contacts);
 
     fs.writeFile(contactsPath, JSON.stringify(contacts), error => {
